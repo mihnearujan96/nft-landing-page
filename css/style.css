@@ -8,10 +8,10 @@
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
+  --bg-color: #000000;
   --font-color: #ffffff;
-  --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --btn-bg-color: #767676;
+  /* --accent-color: #da1919; */
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -43,6 +43,11 @@ body {
 header {
   box-shadow: var(--header-shadow);
 }
+.logo {
+  width: 250px;
+  height: 200px;
+  text-align: center;
+}
 
 header .container {
   flex-direction: row;
@@ -54,6 +59,7 @@ header .container {
   display: flex;
   gap: 2rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* BUTTONS */
@@ -64,7 +70,6 @@ header .container {
   background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
-  font-style: italic;
   font-weight: bold;
   font-size: 1rem;
   text-transform: capitalize;
@@ -142,7 +147,7 @@ section {
 
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
-  font-style: italic;
+  
   margin: 2rem 0;
   font-size: 3.5rem;
   text-align: center;
